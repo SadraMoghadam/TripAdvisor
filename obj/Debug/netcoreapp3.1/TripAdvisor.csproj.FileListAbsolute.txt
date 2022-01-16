@@ -1,0 +1,13 @@
+D:\University classes\OOAD\FinalProject\TripAdvisor\bin\Debug\netcoreapp3.1\TripAdvisor.exe
+D:\University classes\OOAD\FinalProject\TripAdvisor\bin\Debug\netcoreapp3.1\TripAdvisor.deps.json
+D:\University classes\OOAD\FinalProject\TripAdvisor\bin\Debug\netcoreapp3.1\TripAdvisor.runtimeconfig.json
+D:\University classes\OOAD\FinalProject\TripAdvisor\bin\Debug\netcoreapp3.1\TripAdvisor.runtimeconfig.dev.json
+D:\University classes\OOAD\FinalProject\TripAdvisor\bin\Debug\netcoreapp3.1\TripAdvisor.dll
+D:\University classes\OOAD\FinalProject\TripAdvisor\bin\Debug\netcoreapp3.1\TripAdvisor.pdb
+D:\University classes\OOAD\FinalProject\TripAdvisor\obj\Debug\netcoreapp3.1\TripAdvisor.csprojAssemblyReference.cache
+D:\University classes\OOAD\FinalProject\TripAdvisor\obj\Debug\netcoreapp3.1\TripAdvisor.csproj.CoreCompileInputs.cache
+D:\University classes\OOAD\FinalProject\TripAdvisor\obj\Debug\netcoreapp3.1\TripAdvisor.AssemblyInfoInputs.cache
+D:\University classes\OOAD\FinalProject\TripAdvisor\obj\Debug\netcoreapp3.1\TripAdvisor.AssemblyInfo.cs
+D:\University classes\OOAD\FinalProject\TripAdvisor\obj\Debug\netcoreapp3.1\TripAdvisor.dll
+D:\University classes\OOAD\FinalProject\TripAdvisor\obj\Debug\netcoreapp3.1\TripAdvisor.pdb
+D:\University classes\OOAD\FinalProject\TripAdvisor\obj\Debug\netcoreapp3.1\TripAdvisor.genruntimeconfig.cache
