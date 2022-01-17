@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\University classes\\OOAD\\FinalProject\\TripAdvisor\\TripAdvisor.csproj": {}
+    "D:\\University classes\\OOAD\\FinalProject\\TripAdvisor\\TripAdvisor.csproj": {}
   },
   "projects": {
-    "d:\\University classes\\OOAD\\FinalProject\\TripAdvisor\\TripAdvisor.csproj": {
+    "D:\\University classes\\OOAD\\FinalProject\\TripAdvisor\\TripAdvisor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\University classes\\OOAD\\FinalProject\\TripAdvisor\\TripAdvisor.csproj",
+        "projectUniqueName": "D:\\University classes\\OOAD\\FinalProject\\TripAdvisor\\TripAdvisor.csproj",
         "projectName": "TripAdvisor",
-        "projectPath": "d:\\University classes\\OOAD\\FinalProject\\TripAdvisor\\TripAdvisor.csproj",
+        "projectPath": "D:\\University classes\\OOAD\\FinalProject\\TripAdvisor\\TripAdvisor.csproj",
         "packagesPath": "C:\\Users\\Scorpion\\.nuget\\packages\\",
-        "outputPath": "d:\\University classes\\OOAD\\FinalProject\\TripAdvisor\\obj\\",
+        "outputPath": "D:\\University classes\\OOAD\\FinalProject\\TripAdvisor\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Scorpion\\AppData\\Roaming\\NuGet\\NuGet.Config"
