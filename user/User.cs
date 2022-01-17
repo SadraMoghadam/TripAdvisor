@@ -11,6 +11,11 @@ public class User
 		user_Id = id;
 		this.userInfo = user_info;
 	}
+	public User(string username , string pasword)
+    {
+		userInfo.Username = username;
+		userInfo.Pasword = pasword;
+    }
 
 	public UserInfo getUserInfo() => this.userInfo;
 	
