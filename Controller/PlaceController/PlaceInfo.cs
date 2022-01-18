@@ -10,57 +10,25 @@ namespace TripAdvisor
         private string location;
         private string description;
         private string contactPhone;
-        private float rating;
-        private float price;
-        
-        public string Name
-        {
-            get => name;
-            set => name = value;
-        }
+        private double rating;
+        private double price;
 
-        public string City
-        {
-            get => city;
-            set => city = value;
-        }
+        public string Name => name;
 
-        public string Address
-        {
-            get => address;
-            set => address = value;
-        }
+        public string City => city;
 
-        public string Location
-        {
-            get => location;
-            set => location = value;
-        }
+        public string Address => address;
 
-        public string Description
-        {
-            get => description;
-            set => description = value;
-        }
+        public string Location => location;
 
-        public string ContactPhone
-        {
-            get => contactPhone;
-            set => contactPhone = value;
-        }
+        public string Description => description;
 
-        public float Rating
-        {
-            get => rating;
-            set => rating = value;
-        }
+        public string ContactPhone => contactPhone;
 
-        public float Price
-        {
-            get => price;
-            set => price = value;
-        }
-        
+        public double Rating => rating;
+
+        public double Price => price;
+
         // public string getName() { return name; }
         // public string getCity() { return city; }
         // public string getAddress() { return address; }
@@ -71,7 +39,7 @@ namespace TripAdvisor
         // public float getPrice() { return price; }
         
         public PlaceInfo(string name, string city, string address, string location,
-            string description, string contactPhone, float rating, float price)
+            string description, string contactPhone, double rating, double price)
         {
             Console.WriteLine("---------------we are in PlaceInfo---------------");
             this.name = name;
