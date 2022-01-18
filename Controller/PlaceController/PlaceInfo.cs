@@ -2,7 +2,7 @@ using System;
 
 namespace TripAdvisor
 {
-    class PlaceInfo
+    public class PlaceInfo
     {
         private string name;
         private string city;

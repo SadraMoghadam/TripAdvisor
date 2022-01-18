@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace TripAdvisor
 {
-    class Review
+    public class Review
     {
         private List<Rating> travelerRating;
         private List<TimeOfYear> timeOfYear;

@@ -47,7 +47,7 @@ namespace TripAdvisor
         
         public void showReplies(List<Comment> replies)
         {
-            Console.WriteLine("getting replies and showing them");
+            Console.WriteLine("showing replies");
         }
     }
 }

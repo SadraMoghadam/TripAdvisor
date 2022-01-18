@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace TripAdvisor
 {
-    class Place
+    public class Place
     {
         private PlaceInfo placeInfo;
         private List<Review> reviews;
