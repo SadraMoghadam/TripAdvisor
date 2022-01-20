@@ -1,22 +1,59 @@
 ﻿using System;
-using UserInfo
+using System.Collections.Generic;
+using TripAdvisor;
 
 public class User
 {
-	private int user_Id { get; set; }
-	private UserInfo userInfo; 
+	#region Singleton Pattern
 
-	public User(int id,UserInfo user_info)
+	static User instance;
+
+	public static User Instance
 	{
-		user_Id = id;
-		this.userInfo = user_info;
+		get
+		{
+			return instance;
+		}
 	}
-	public User(string username , string pasword)
-    {
-		userInfo.Username = username;
-		userInfo.Pasword = pasword;
-    }
 
-	public UserInfo getUserInfo() => this.userInfo;
+	#endregion
 	
+	private int userId { get; set; }
+	private UserInfo userInfo;
+	private bool loggedIn;
+	private List<Review> reviews;
+
+	public List<Review> Reviews => reviews;
+
+	public UserInfo UserInfo => userInfo;
+
+	public User(int userId,UserInfo userInfo)
+	{
+		this.userId = userId;
+		this.userInfo = userInfo;
+		this.loggedIn = false;
+	}
+
+	public void updateUser(UserInfo userInfo)
+	{
+		this.userInfo = userInfo;
+	}
+
+	public bool logIn(string username, string password)
+	{
+		this.loggedIn = true;
+		Console.WriteLine("logged in successfullty");
+		return this.loggedIn;
+	}
+
+	public bool register(UserInfo userInfo)
+	{
+		Console.WriteLine("registered successfullty");
+		return true;
+	}
+
+	public void showReviews(List<Review> reviews)
+	{
+		Console.WriteLine("showing user reviews");
+	}
 }
