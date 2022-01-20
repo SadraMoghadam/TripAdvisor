@@ -12,7 +12,7 @@ namespace TripAdvisor
         private List<Hotel> similarHotels;
 
         public Hotel(List<string> style, List<string> amenities, List<string> propertyTypes, List<string> roomFeatures, List<Hotel> similarHotels)
-        : base(null, null, null)
+        : base(Place.Instance.PlaceId, Place.Instance.PlaceInfo, Place.Instance.Reviews, Place.Instance.Expectations)
         {
             this.style = style;
             this.amenities = amenities;
