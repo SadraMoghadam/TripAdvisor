@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace TripAdvisor
 {
-    public class HotelSearch
+    public class HotelSearch: ISearch<Hotel, HotelSearchFields>
     {
         private HotelSearchFields hotelSearchFields;
 
@@ -14,7 +14,7 @@ namespace TripAdvisor
             this.hotelSearchFields = hotelSearchFields;
         }
 
-        public List<Hotel> search()
+        public List<Hotel> search(HotelSearchFields Fields)
         {
             Console.WriteLine("return searched hotels");
             return null;
