@@ -20,7 +20,7 @@ namespace TripAdvisor.Restaurant
         public List<Restaurant> SimilarRestaurants => similarRestaurants;
 
         public Restaurant(RestaurantDetails restaurantDetails, RestaurantRaitings restaurantRaitings, Dictionary<string, float> menu, List<Restaurant> similarRestaurants, int numOfTables)
-        : base(null, null, null)
+        : base(Place.Instance.PlaceId, Place.Instance.PlaceInfo, Place.Instance.Reviews, Place.Instance.Expectations)
         {
             this.restaurantDetails = restaurantDetails;
             this.restaurantRaitings = restaurantRaitings;
