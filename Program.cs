@@ -19,7 +19,7 @@ namespace TripAdvisor
             List<Review> reviews = new List<Review>();
             Review review = new Review(null, null, travelerTypes, comments, "English");
             reviews.Add(review);
-            Place p = new Place(pi, reviews, null);
+            Place p = new Place(1, pi, reviews, null);
 
             
             Console.WriteLine(pi.Name);
