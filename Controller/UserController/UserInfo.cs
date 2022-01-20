@@ -2,7 +2,7 @@
 
 public class UserInfo
 {
-    private int userInfo_id;
+    private int userInfoId;
     private string name;
     private string email;
     private string username;
@@ -11,13 +11,13 @@ public class UserInfo
     private int age;
     private string address;
 
-    public string getUsername() => this.username;
-    public string getName() => this.name;
-    public string getEmail() => this.email;
-    public string getPassword() => this.password;
-    public bool getGender() => this.gender;
-    public int getAge() => this.age;
-    public string getAddress() => this.address;
-    public int getUserInfo_id() => this.userInfo_id;
+    public string Username() => this.username;
+    public string Name() => this.name;
+    public string Email() => this.email;
+    public string Password() => this.password;
+    public bool Gender() => this.gender;
+    public int Age() => this.age;
+    public string Address() => this.address;
+    public int UserInfoId() => this.userInfoId;
 }
 
