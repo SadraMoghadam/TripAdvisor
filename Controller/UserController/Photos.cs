@@ -11,19 +11,19 @@ namespace TripAdvisor.Controller.UserController
         public void addPhoto(int userId, string picture, string city="", string description="")
         {
             this.picture = picture;
-            Console.WriteLine("added profile picture");
+            Console.WriteLine("added a picture");
         }
         
         public void updatePhoto(int userId, string picture, int picId=1, string city="", string description="")
         {
             this.picture = picture;
-            Console.WriteLine("updated profile picture");
+            Console.WriteLine("updated the picture");
         }
         
         public bool deletePhoto(int userId)
         {
             this.picture = "";
-            Console.WriteLine("deleted profile picture");
+            Console.WriteLine("deleted the picture");
             return true;
         }
 

@@ -1,67 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using TripAdvisor.Controller.UserController;
 
 namespace TripAdvisor
 {
-    class Program
+    public class UserScenario
     {
-        static UserInfo defaultUserInfo = new UserInfo(1, "sadra", "sadra_h_m@outlook.com", "scorpion", "abcd", true, 21, "here", "my picture");
-        static User defaultLoginedUser = new User(1, defaultUserInfo);
-        static void Main(string[] args)
-        {
-            while (true)
-            {
-                Console.WriteLine("Select scenario:");
-                Console.WriteLine("1.LoginRegisterScenario 2.ProfileScenario 3.PlaceScenario 4.TicketScenario 5.exit");
-                int menu = int.Parse(Console.ReadLine());
-                switch (menu)
-                {
-                    case 1:
-                        loginRegisterScenario();
-                        break;
-                    case 2:
-                        profileScenario();
-                        break;
-                    case 3:
-                        placeScenario();
-                        break;
-                    case 4:
-                        ticketScenario();
-                        break;
-                    case 5: 
-                        break;
-                }
-            }
-
-            
-            // PlaceInfo pi = new PlaceInfo("a", "b", "c", "d", "e", "f", 1, 2);
-            // List<TravelerType> travelerTypes= new List<TravelerType>();
-            // travelerTypes.Add(TravelerType.Couples);
-            // travelerTypes.Add(TravelerType.Families);
-            // List<Comment> comments = new List<Comment>();
-            // Comment comment = new Comment("ali", DateTime.Now, "paris", "its awsome", 4.5);
-            // comments.Add(comment);
-            // List<Review> reviews = new List<Review>();
-            // Review review = new Review(null, null, travelerTypes, comments, "English");
-            // reviews.Add(review);
-            // Place p = new Place(1, pi, reviews, null);
-            //
-            //
-            // Console.WriteLine(pi.Name);
-            // Console.WriteLine(p.PlaceInfo.Name);
-            //
-            //
-            // Console.WriteLine(p.Reviews.First().getComments());
-        }
-
-        public static void loginRegisterScenario()
+        public static UserInfo defaultUserInfo = new UserInfo(1, "sadra", "sadra_h_m@outlook.com", "scorpion", "abcd", true, 21, "here", "my picture");
+        public static User defaultLoginedUser = new User(1, defaultUserInfo);
+        public static void loginRegisterScenarios()
         {
             UserInfo userInfo = null;
             while (true)
             {
-                Console.WriteLine();
+                Console.WriteLine("-------------------------------------------------------------------");
                 Console.WriteLine("1.Login 2.Register 3.exit");
                 int menu = int.Parse(Console.ReadLine());
                 switch (menu)
@@ -109,10 +60,11 @@ namespace TripAdvisor
             }
         }
         
-        public static void profileScenario()
+        public static void profileScenarios()
         {
             while (true)
             {
+                Console.WriteLine("-------------------------------------------------------------------");
                 Console.WriteLine("Choose a page from your profile");
                 Console.WriteLine("1.EditProfile 2.Photos 3.Trip 4.WriteReview 5.exit");
                 int menu = int.Parse(Console.ReadLine());
@@ -144,7 +96,7 @@ namespace TripAdvisor
                         defaultLoginedUser.updateUser(userInfo);
                         break;
                     case 2:
-                        photosScenario();
+                        photosScenarios();
                         break;
                     case 3:
                         Console.WriteLine("add a trip: ");
@@ -182,17 +134,18 @@ namespace TripAdvisor
             }
         }
 
-        public static void photosScenario()
+        public static void photosScenarios()
         {
             while (true)
             {
+                Console.WriteLine("-------------------------------------------------------------------");
                 Console.WriteLine("1.Photos 2.TravelPhotos 3.exit");
                 int menu = int.Parse(Console.ReadLine());
-                Console.WriteLine("1.AddPhoto 2.UpdatePhoto 3.DeletePhoto");
-                int input1 = int.Parse(Console.ReadLine());
                 switch (menu)
                 {
                     case 1:
+                        Console.WriteLine("1.AddPhoto 2.UpdatePhoto 3.DeletePhoto");
+                        int input1 = int.Parse(Console.ReadLine());
                         Photos photos = new Photos();
                         photos.showPhoto(1);
                         if (input1 == 3)
@@ -207,9 +160,11 @@ namespace TripAdvisor
                         break;
                     case 2:
                         Console.WriteLine("1.AddPhoto 2.UpdatePhoto 3.DeletePhoto");
+                        int input2 = int.Parse(Console.ReadLine());
+                        Console.WriteLine("1.AddPhoto 2.UpdatePhoto 3.DeletePhoto");
                         TravelPhotos travelPhotos = new TravelPhotos();
                         travelPhotos.showPhoto(1);
-                        if (input1 == 3)
+                        if (input2 == 3)
                             travelPhotos.deletePhoto(1, 1);
                         Console.Write("picture: ");
                         string picture = Console.ReadLine();
@@ -217,9 +172,9 @@ namespace TripAdvisor
                         string city = Console.ReadLine();
                         Console.Write("description: ");
                         string description = Console.ReadLine();
-                        if(input1 == 1)
+                        if(input2 == 1)
                             travelPhotos.addPhoto(1, picture, city, description);
-                        else if(input1 == 2)
+                        else if(input2 == 2)
                             travelPhotos.updatePhoto(1, picture, 1, city, description);
                         travelPhotos.showPhoto(1);
                         break;
@@ -230,17 +185,5 @@ namespace TripAdvisor
                     break;
             }
         }
-        
-        
-        public static void placeScenario()
-        {
-            Console.WriteLine("3");
-        }
-        
-        public static void ticketScenario()
-        {
-            Console.WriteLine("4");
-        }
-        
     }
 }

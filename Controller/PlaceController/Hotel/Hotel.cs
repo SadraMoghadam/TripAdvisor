@@ -9,10 +9,10 @@ namespace TripAdvisor
         private List<string> amenities;
         private List<string> propertyTypes;
         private List<string> roomFeatures;
-        private List<Hotel> similarHotels;
+        private List<int> similarHotels;
 
-        public Hotel(List<string> style, List<string> amenities, List<string> propertyTypes, List<string> roomFeatures, List<Hotel> similarHotels)
-        : base(Place.Instance.PlaceId, Place.Instance.PlaceInfo, Place.Instance.Reviews, Place.Instance.Expectations)
+        public Hotel(List<string> style, List<string> amenities, List<string> propertyTypes, List<string> roomFeatures, List<int> similarHotels)
+        : base(Instance.PlaceId, Instance.PlaceInfo, Instance.Reviews, Instance.Expectations)
         {
             this.style = style;
             this.amenities = amenities;
@@ -37,7 +37,7 @@ namespace TripAdvisor
             Console.WriteLine("connecting to booking sites");
         }
         
-        public List<Hotel> getSimilarHotels()
+        public List<int> getSimilarHotels()
         {
             Console.WriteLine("getting similar hotels");
             return null;

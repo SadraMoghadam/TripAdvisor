@@ -15,7 +15,7 @@ namespace TripAdvisor.Controller.UserController
             this.picture = picture;
             this.city = city;
             this.description = description;
-            Console.WriteLine("added profile picture");
+            Console.WriteLine("added a travel picture");
         }
         
         public void updatePhoto(int userId, string picture, int picId, string city, string description)
@@ -23,7 +23,7 @@ namespace TripAdvisor.Controller.UserController
             this.picture = picture;
             this.city = city;
             this.description = description;
-            Console.WriteLine("updated profile picture");
+            Console.WriteLine("updated the travel picture");
         }
         
         public bool deletePhoto(int userId, int picId)
@@ -31,7 +31,7 @@ namespace TripAdvisor.Controller.UserController
             this.picture = "";
             this.city = "";
             this.description = "";
-            Console.WriteLine("deleted profile picture");
+            Console.WriteLine("deleted the travel picture");
             return true;
         }
 

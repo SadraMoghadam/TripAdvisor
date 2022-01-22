@@ -9,10 +9,10 @@ namespace TripAdvisor
 
         public HotelSearchFields HotelSearchFields => hotelSearchFields;
 
-        public HotelSearch(HotelSearchFields hotelSearchFields)
-        {
-            this.hotelSearchFields = hotelSearchFields;
-        }
+        // public HotelSearch(HotelSearchFields hotelSearchFields)
+        // {
+        //     this.hotelSearchFields = hotelSearchFields;
+        // }
 
         public List<Hotel> search(HotelSearchFields Fields)
         {
