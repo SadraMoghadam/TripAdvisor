@@ -11,3 +11,17 @@ D:\University classes\OOAD\FinalProject\TripAdvisor\obj\Debug\netcoreapp3.1\Trip
 D:\University classes\OOAD\FinalProject\TripAdvisor\obj\Debug\netcoreapp3.1\TripAdvisor.dll
 D:\University classes\OOAD\FinalProject\TripAdvisor\obj\Debug\netcoreapp3.1\TripAdvisor.pdb
 D:\University classes\OOAD\FinalProject\TripAdvisor\obj\Debug\netcoreapp3.1\TripAdvisor.genruntimeconfig.cache
+E:\OOP\bin\Debug\netcoreapp3.1\TripAdvisor.exe
+E:\OOP\bin\Debug\netcoreapp3.1\TripAdvisor.deps.json
+E:\OOP\bin\Debug\netcoreapp3.1\TripAdvisor.runtimeconfig.json
+E:\OOP\bin\Debug\netcoreapp3.1\TripAdvisor.runtimeconfig.dev.json
+E:\OOP\bin\Debug\netcoreapp3.1\TripAdvisor.dll
+E:\OOP\bin\Debug\netcoreapp3.1\TripAdvisor.pdb
+E:\OOP\obj\Debug\netcoreapp3.1\TripAdvisor.csproj.AssemblyReference.cache
+E:\OOP\obj\Debug\netcoreapp3.1\TripAdvisor.GeneratedMSBuildEditorConfig.editorconfig
+E:\OOP\obj\Debug\netcoreapp3.1\TripAdvisor.AssemblyInfoInputs.cache
+E:\OOP\obj\Debug\netcoreapp3.1\TripAdvisor.AssemblyInfo.cs
+E:\OOP\obj\Debug\netcoreapp3.1\TripAdvisor.csproj.CoreCompileInputs.cache
+E:\OOP\obj\Debug\netcoreapp3.1\TripAdvisor.dll
+E:\OOP\obj\Debug\netcoreapp3.1\TripAdvisor.pdb
+E:\OOP\obj\Debug\netcoreapp3.1\TripAdvisor.genruntimeconfig.cache

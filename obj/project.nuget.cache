@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "6UMjuBoaAhTbjgcbBP7eOObel8eF7kG73gGMyZXE3yxzNQZcn8sboy/HQ+m3VRP3wB5FbaGrZt7YtGKYqODYyg==",
+  "dgSpecHash": "bfZMfE5I4RjsJBxRIdLBplxSRGSEjYAkBUhOuN1L2jR4MH8eD5BHqgTiX0uru2INYK3znqr/bPQD1Mf2dGQ4Zg==",
   "success": true,
-  "projectFilePath": "D:\\University classes\\OOAD\\FinalProject\\TripAdvisor\\TripAdvisor.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "E:\\OOP\\TripAdvisor.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.22\\microsoft.netcore.app.host.win-x64.3.1.22.nupkg.sha512"
+  ],
   "logs": []
 }

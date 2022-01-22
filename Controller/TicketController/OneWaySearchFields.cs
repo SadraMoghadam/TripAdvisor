@@ -35,5 +35,6 @@ namespace TripAdvisor
             this.depart = depart;
             this.traveler = traveler;
         }
+        
     }
 }

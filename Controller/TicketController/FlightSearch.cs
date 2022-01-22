@@ -14,7 +14,7 @@ namespace TripAdvisor
             this.flightSearchFields = flightSearchFields;
         }
 
-        public List<Flight> search()
+        public List<Flight> search(OneWaySearchFields f)
         {
             Console.WriteLine("return searched flights");
             return null;

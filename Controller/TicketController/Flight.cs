@@ -12,9 +12,12 @@ namespace TripAdvisor
             this.flights = flights;
         }
 
-        public void showFlights()
+        public void showFlights(List<FlightInfo> flightInfos)
         {
-            Console.WriteLine("showing list of flights");
+            for (int i = 0; i < flightInfos.Count; i++)
+            {
+                Console.WriteLine(flightInfos);
+            }
         }
     }
 }

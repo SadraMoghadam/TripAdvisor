@@ -24,13 +24,13 @@ namespace TripAdvisor
             this.traveler = traveler;
         }*/
 
-         public List<OneWaySearchFields> addAnotherFlight()
+         public MultiCitySearchFields addAnotherFlight()
         {
             Console.WriteLine("add another flight search field");
             return null;
         }
 
-         public List<OneWaySearchFields> deleteAnotherFlight()
+         public MultiCitySearchFields deleteAnotherFlight()
         {
             Console.WriteLine("delete another flight search field");
             return null;

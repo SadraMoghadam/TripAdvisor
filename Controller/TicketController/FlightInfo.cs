@@ -30,7 +30,8 @@ namespace TripAdvisor
 
         public void showFlightInfo()
         {
-            Console.WriteLine("showing flightInfo");
+            Console.WriteLine( "From: " +fromCity + "- To: " +destination + "- Price: " + price);
+            
         }
 
     }
