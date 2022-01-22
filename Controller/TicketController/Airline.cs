@@ -7,7 +7,7 @@ namespace TripAdvisor
     {
         private string airlineName;
         private string fromHour;
-        private string DesHour;
+        private string desHour;
         private string airportName;
 
         public string AirlineName => airlineName;
@@ -30,7 +30,6 @@ namespace TripAdvisor
         public void showAirline()
         {
             Console.WriteLine("It is an airline");
-            return null;
         }
     }
 }

@@ -19,7 +19,7 @@ namespace TripAdvisor
 
         public string Departs => departs;
 
-        public string Depart => depart;
+        public string SailingDates => sailingDates;
 
 
         public CruiseInfo(int nights, float price, string country, string departs, string sailingDates)

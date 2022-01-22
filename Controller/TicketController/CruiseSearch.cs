@@ -7,9 +7,9 @@ namespace TripAdvisor
     {
         private CruiseSearchFields cruiseSearchFields;
 
-        public CruiseSearchFields cruiseSearchFields => cruiseSearchFields;
+        public CruiseSearchFields CruisesearchFields => cruiseSearchFields;
 
-        public CruiseSearch(CruiselSearchFields cruiseSearchFields)
+        public CruiseSearch(CruiseSearchFields cruiseSearchFields)
         {
             this.cruiseSearchFields = cruiseSearchFields;
         }
@@ -20,4 +20,5 @@ namespace TripAdvisor
             return null;
         }
     }
+    
 }

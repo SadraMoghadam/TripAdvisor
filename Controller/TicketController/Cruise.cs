@@ -15,7 +15,6 @@ namespace TripAdvisor
         public void showCruises()
         {
             Console.WriteLine("showing list of cruises");
-            return null;
         }
     }
 }
