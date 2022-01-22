@@ -41,7 +41,8 @@ namespace TripAdvisor
         public PlaceInfo(string name, string city, string address, string location,
             string description, string contactPhone, double rating, double price)
         {
-            Console.WriteLine("---------------we are in PlaceInfo---------------");
+            // Console.WriteLine("---------------we are in PlaceInfo---------------");
+            
             this.name = name;
             this.city = city;
             this.address = address;

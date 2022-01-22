@@ -30,8 +30,15 @@ namespace TripAdvisor
             return null;
         }
         
-        public void showReview(List<Rating> travelerRating, List<TimeOfYear> timeOfYear, List<TravelerType> travelerType, 
-                            List<Comment> comments, string language)
+        // public void showReview(List<Rating> travelerRating, List<TimeOfYear> timeOfYear, List<TravelerType> travelerType, 
+        //                     List<Comment> comments, string language)
+        // {
+        //     // for(int i = 0; i < travelerRating.Count; i++)
+        //     //     System.Console.WriteLine();
+        //     Console.WriteLine("showing review");
+        // }
+        
+        public void showReview()
         {
             // for(int i = 0; i < travelerRating.Count; i++)
             //     System.Console.WriteLine();
