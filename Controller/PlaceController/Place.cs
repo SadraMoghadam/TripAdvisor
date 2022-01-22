@@ -7,7 +7,7 @@ namespace TripAdvisor
     {
         #region Singleton Pattern
 
-        static Place instance;
+        private static Place instance;
 
         public static Place Instance
         {
@@ -37,11 +37,17 @@ namespace TripAdvisor
         //public string getExpectations { return expectations; }
         public Place(int placeId, PlaceInfo placeInfo, List<Review> reviews, List<string> expectations)
         {
-            Console.WriteLine("---------------we are in Place---------------");
+            // Console.WriteLine("---------------we are in Place---------------");
             this.placeId = placeId;
             this.placeInfo = placeInfo;
             this.reviews = reviews;
             this.expectations = expectations;
+        }
+
+        public void redirectToPage()
+        {
+            instance = new Place(placeId, placeInfo, reviews, expectations);
+            Console.WriteLine("redirecting to page ...");
         }
     }
 }

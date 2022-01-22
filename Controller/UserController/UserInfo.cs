@@ -10,6 +10,7 @@ public class UserInfo
     private bool gender;
     private int age;
     private string address;
+    private string picture;
 
     public string Username() => this.username;
     public string Name() => this.name;
@@ -19,5 +20,19 @@ public class UserInfo
     public int Age() => this.age;
     public string Address() => this.address;
     public int UserInfoId() => this.userInfoId;
+    public string Picture() => this.picture;
+
+    public UserInfo(int userInfoId, string name, string email, string username, string password, bool gender, int age, string address, string picture)
+    {
+        this.userInfoId = userInfoId;
+        this.name = name;
+        this.email = email;
+        this.username = username;
+        this.password = password;
+        this.gender = gender;
+        this.age = age;
+        this.address = address;
+        this.picture = picture;
+    }
 }
 

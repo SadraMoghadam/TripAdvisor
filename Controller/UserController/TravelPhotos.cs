@@ -6,26 +6,39 @@ namespace TripAdvisor.Controller.UserController
     {
         public int picId { get; set; }
         public string picture { get; set; }
+        public string city { get; set; }
+        public string description { get; set; }
         
-        public void addPhoto(int userId, string picture)
+        public void addPhoto(int userId, string picture, string city, string description)
         {
-            Console.WriteLine("added profile picture");
+            this.picId = 1;
+            this.picture = picture;
+            this.city = city;
+            this.description = description;
+            Console.WriteLine("added a travel picture");
         }
         
-        public void updatePhoto(int userId, string picture)
+        public void updatePhoto(int userId, string picture, int picId, string city, string description)
         {
-            Console.WriteLine("updated profile picture");
+            this.picture = picture;
+            this.city = city;
+            this.description = description;
+            Console.WriteLine("updated the travel picture");
         }
         
-        public bool deletePhoto(int userId, string picture)
+        public bool deletePhoto(int userId, int picId)
         {
-            Console.WriteLine("deleted profile picture");
+            this.picture = "";
+            this.city = "";
+            this.description = "";
+            Console.WriteLine("deleted the travel picture");
             return true;
         }
 
         public void showPhoto(int userId)
         {
-            Console.WriteLine("showing user photo");
+            // Console.WriteLine("showing user travel photo: " + this.picture + " in " + city + "with description " + description);
+            Console.WriteLine("showing user travel photos");
         }
     }
 }
