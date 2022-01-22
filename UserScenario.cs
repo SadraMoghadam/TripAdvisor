@@ -35,18 +35,18 @@ namespace TripAdvisor
                         string username = Console.ReadLine();
                         Console.Write("password: ");
                         string password = Console.ReadLine();
-                        Console.WriteLine("gender(not required): 1.Male 2.Female");
+                        Console.WriteLine("gender: 1.Male 2.Female");
                         int gender_num = int.Parse(Console.ReadLine());
                         bool gender;
                         if (gender_num == 1)
                             gender = true;
                         else
                             gender = false;
-                        Console.Write("age(not required): ");
+                        Console.Write("age: ");
                         int age = int.Parse(Console.ReadLine());
-                        Console.Write("address(not required): ");
+                        Console.Write("address: ");
                         string address = Console.ReadLine();
-                        Console.Write("picture(not required): ");
+                        Console.Write("picture: ");
                         string picture = Console.ReadLine();
                         userInfo = new UserInfo(1, name, email, username, password, gender, age, address, picture);
                         User reg_user = new User(1, userInfo);
@@ -79,18 +79,18 @@ namespace TripAdvisor
                         string username = Console.ReadLine();
                         Console.Write("password: ");
                         string password = Console.ReadLine();
-                        Console.WriteLine("gender(not required): 1.Male 2.Female");
+                        Console.WriteLine("gender: 1.Male 2.Female");
                         int gender_num = int.Parse(Console.ReadLine());
                         bool gender;
                         if (gender_num == 1)
                             gender = true;
                         else
                             gender = false;
-                        Console.Write("age(not required): ");
+                        Console.Write("age: ");
                         int age = int.Parse(Console.ReadLine());
-                        Console.Write("address(not required): ");
+                        Console.Write("address: ");
                         string address = Console.ReadLine();
-                        Console.Write("picture(not required): ");
+                        Console.Write("picture: ");
                         string picture = Console.ReadLine();
                         UserInfo userInfo = new UserInfo(1, name, email, username, password, gender, age, address, picture);
                         defaultLoginedUser.updateUser(userInfo);
@@ -149,7 +149,7 @@ namespace TripAdvisor
                         Photos photos = new Photos();
                         photos.showPhoto(1);
                         if (input1 == 3)
-                            photos.deletePhoto(1);
+                            photos.deletePhoto(1, 1);
                         Console.Write("picture: ");
                         string p_picture = Console.ReadLine();
                         if(input1 == 1)

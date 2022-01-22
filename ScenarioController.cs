@@ -33,6 +33,8 @@ namespace TripAdvisor
                     case 5: 
                         break;
                 }
+                if(menu == 5)
+                    break;
             }
         }
         

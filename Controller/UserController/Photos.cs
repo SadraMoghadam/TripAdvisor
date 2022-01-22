@@ -20,7 +20,7 @@ namespace TripAdvisor.Controller.UserController
             Console.WriteLine("updated the picture");
         }
         
-        public bool deletePhoto(int userId)
+        public bool deletePhoto(int userId, int picId)
         {
             this.picture = "";
             Console.WriteLine("deleted the picture");
