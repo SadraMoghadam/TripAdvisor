@@ -1,33 +1,34 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using TripAdvisor.Controller.UserController;
 
 namespace TripAdvisor
 {
     class Program
     {
-        static UserInfo defaultUserInfo = new UserInfo(1, "sadra", "sadra_h_m@outlook.com", "scorpion", "abcd", true, 21, "here");
+        static UserInfo defaultUserInfo = new UserInfo(1, "sadra", "sadra_h_m@outlook.com", "scorpion", "abcd", true, 21, "here", "my picture");
         static User defaultLoginedUser = new User(1, defaultUserInfo);
         static void Main(string[] args)
         {
             while (true)
             {
                 Console.WriteLine("Select scenario:");
-                Console.WriteLine("1.senarioLoginRegister 2.senarioProfile 3.senarioPlace 4.SearchTicket 5.exit");
+                Console.WriteLine("1.LoginRegisterScenario 2.ProfileScenario 3.PlaceScenario 4.TicketScenario 5.exit");
                 int menu = int.Parse(Console.ReadLine());
                 switch (menu)
                 {
                     case 1:
-                        senarioLoginRegister();
+                        loginRegisterScenario();
                         break;
                     case 2:
-                        senarioProfile();
+                        profileScenario();
                         break;
                     case 3:
-                        senarioPlace();
+                        placeScenario();
                         break;
                     case 4:
-                        SearchTicket();
+                        ticketScenario();
                         break;
                     case 5: 
                         break;
@@ -55,7 +56,7 @@ namespace TripAdvisor
             // Console.WriteLine(p.Reviews.First().getComments());
         }
 
-        public static void senarioLoginRegister()
+        public static void loginRegisterScenario()
         {
             UserInfo userInfo = null;
             while (true)
@@ -94,7 +95,9 @@ namespace TripAdvisor
                         int age = int.Parse(Console.ReadLine());
                         Console.Write("address(not required): ");
                         string address = Console.ReadLine();
-                        userInfo = new UserInfo(1, name, email, username, password, gender, age, address);
+                        Console.Write("picture(not required): ");
+                        string picture = Console.ReadLine();
+                        userInfo = new UserInfo(1, name, email, username, password, gender, age, address, picture);
                         User reg_user = new User(1, userInfo);
                         reg_user.register();
                         break;
@@ -106,7 +109,7 @@ namespace TripAdvisor
             }
         }
         
-        public static void senarioProfile()
+        public static void profileScenario()
         {
             while (true)
             {
@@ -135,30 +138,106 @@ namespace TripAdvisor
                         int age = int.Parse(Console.ReadLine());
                         Console.Write("address(not required): ");
                         string address = Console.ReadLine();
-                        UserInfo userInfo = new UserInfo(1, name, email, username, password, gender, age, address);
+                        Console.Write("picture(not required): ");
+                        string picture = Console.ReadLine();
+                        UserInfo userInfo = new UserInfo(1, name, email, username, password, gender, age, address, picture);
                         defaultLoginedUser.updateUser(userInfo);
                         break;
                     case 2:
+                        photosScenario();
                         break;
                     case 3:
+                        Console.WriteLine("add a trip: ");
+                        Trip trip = new Trip();
+                        Console.Write("title: ");
+                        string title = Console.ReadLine();
+                        Console.Write("description: ");
+                        string description = Console.ReadLine();
+                        Console.Write("location: ");
+                        string location = Console.ReadLine();
+                        trip.addTrip(1, title, description, location);
+                        trip.showTrips(1);
                         break;
                     case 4:
+                        Console.WriteLine("write a review: ");
+                        WriteReview writeReview = new WriteReview();
+                        Console.Write("title: ");
+                        string title4 = Console.ReadLine();
+                        Console.Write("description: ");
+                        string description4 = Console.ReadLine();
+                        Console.Write("star: ");
+                        int star = int.Parse(Console.ReadLine());
+                        Console.Write("place name: ");
+                        string placeName = Console.ReadLine();
+                        Console.Write("city: ");
+                        string city = Console.ReadLine();
+                        writeReview.submitReview(1, title4, description4, star, placeName, city);
+                        User.Instance.showReviews(1);
                         break;
                     case 5:
                         break;
                 }
-
                 if (menu == 5)
                     break;
             }
         }
+
+        public static void photosScenario()
+        {
+            while (true)
+            {
+                Console.WriteLine("1.Photos 2.TravelPhotos 3.exit");
+                int menu = int.Parse(Console.ReadLine());
+                Console.WriteLine("1.AddPhoto 2.UpdatePhoto 3.DeletePhoto");
+                int input1 = int.Parse(Console.ReadLine());
+                switch (menu)
+                {
+                    case 1:
+                        Photos photos = new Photos();
+                        photos.showPhoto(1);
+                        if (input1 == 3)
+                            photos.deletePhoto(1);
+                        Console.Write("picture: ");
+                        string p_picture = Console.ReadLine();
+                        if(input1 == 1)
+                            photos.addPhoto(1, p_picture);
+                        else if(input1 == 2)
+                            photos.updatePhoto(1, p_picture);
+                        photos.showPhoto(1);
+                        break;
+                    case 2:
+                        Console.WriteLine("1.AddPhoto 2.UpdatePhoto 3.DeletePhoto");
+                        TravelPhotos travelPhotos = new TravelPhotos();
+                        travelPhotos.showPhoto(1);
+                        if (input1 == 3)
+                            travelPhotos.deletePhoto(1, 1);
+                        Console.Write("picture: ");
+                        string picture = Console.ReadLine();
+                        Console.Write("city: ");
+                        string city = Console.ReadLine();
+                        Console.Write("description: ");
+                        string description = Console.ReadLine();
+                        if(input1 == 1)
+                            travelPhotos.addPhoto(1, picture, city, description);
+                        else if(input1 == 2)
+                            travelPhotos.updatePhoto(1, picture, 1, city, description);
+                        travelPhotos.showPhoto(1);
+                        break;
+                    case 3:
+                        break;
+                }
+                if (menu == 3)
+                    break;
+            }
+        }
         
-        public static void senarioPlace()
+        
+        public static void placeScenario()
         {
             Console.WriteLine("3");
         }
         
-        public static void SearchTicket()
+        public static void ticketScenario()
         {
             Console.WriteLine("4");
         }

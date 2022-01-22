@@ -60,7 +60,7 @@ public class User
 		return true;
 	}
 
-	public void showReviews(List<Review> reviews)
+	public void showReviews(int userId)
 	{
 		Console.WriteLine("showing user reviews");
 	}
