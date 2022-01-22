@@ -10,7 +10,7 @@ namespace TripAdvisor
         private int numTravelers;
 
 
-        public Travelers(List<TravelerType> travelerType, int numTravelers)
+        public Travelers(List<TravelersType> travelersType, int numTravelers)
         {
             this.travelersType = travelersType;
             this.numTravelers = numTravelers;
