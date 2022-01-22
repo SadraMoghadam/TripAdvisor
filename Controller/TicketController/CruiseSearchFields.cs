@@ -10,14 +10,11 @@ namespace TripAdvisor
         private List<DepartureMonth> departureMonth;
 
 
-        public ClightSearchFields()
+        public ClightSearchFields(List<Country> country, List<DepartureMonth> departureMonth)
         {
-
+            this.country = country;
+            this.departureMonth = departureMonth;
         }
-        
-        public void setFieldsstring()
-        {
 
-        }
     }
 }

@@ -14,7 +14,7 @@ namespace TripAdvisor
             this.cruiseSearchFields = cruiseSearchFields;
         }
 
-        public List<Cruise> search()
+        public List<Cruise> search(CruiseSearchFields cruiseSearchFields)
         {
             Console.WriteLine("return searched cruises");
             return null;

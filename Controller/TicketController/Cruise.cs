@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+
+namespace TripAdvisor
+{
+    public class Cruise
+    {
+        private List<CruiseInfo> cruises;
+
+        public CruiseSearch(List<CruiseInfo> cruises)
+        {
+            this.cruises = cruises;
+        }
+
+        public void showCruises()
+        {
+            Console.WriteLine("showing list of cruises");
+            return null;
+        }
+    }
+}
