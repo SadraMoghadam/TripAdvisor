@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace TripAdvisor
 {
-    public class RoundWaySearchFields : FlightSearchFields
+    public class RoundWaySearchFields : OneWaySearchFields
     {
 
        // public static FlightSearchFields flightSearchFields;
@@ -13,7 +13,7 @@ namespace TripAdvisor
         public DateTime ReturnDate => returnDate;
 
 
-        public FlightSearchFields(string fromCity, string destination, DateTime depart, DateTime returnDate, Travelers traveler)
+        public RoundWaySearchFields(string fromCity, string destination, DateTime depart, DateTime returnDate, Travelers traveler)
         : base(fromCity, destination, depart, traveler)
         {
             this.returnDate = returnDate;

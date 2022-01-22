@@ -5,11 +5,11 @@ namespace TripAdvisor
 {
     public class FlightSearch
     {
-        private FlightSearchFields flightSearchFields;
+        private OneWaySearchFields flightSearchFields;
 
-        public FlightSearchFields FlightSearchFields => flightSearchFields;
+        public OneWaySearchFields FlightSearchFields => flightSearchFields;
 
-        public FlightSearch(FlightlSearchFields flightSearchFields)
+        public FlightSearch(OneWaySearchFields flightSearchFields)
         {
             this.flightSearchFields = flightSearchFields;
         }

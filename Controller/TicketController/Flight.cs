@@ -15,7 +15,6 @@ namespace TripAdvisor
         public void showFlights()
         {
             Console.WriteLine("showing list of flights");
-            return null;
         }
     }
 }

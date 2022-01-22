@@ -19,7 +19,7 @@ namespace TripAdvisor
         public string Destination => destination;
 
 
-        public CruiseInfo(float price, List<Airline> airline, string fromCity, string destination)
+        public FlightInfo(float price, List<Airline> airline, string fromCity, string destination)
         {
             this.price = price;
             this.airline = airline;
