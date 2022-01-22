@@ -1,6 +1,6 @@
 namespace TripAdvisor
 {
-    public enum Country
+    public enum DepartureMonth
     {
         Jan,
         Feb,

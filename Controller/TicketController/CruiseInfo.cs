@@ -34,7 +34,7 @@ namespace TripAdvisor
 
         public void showCruiseInfo()
         {
-            Console.WriteLine("showing cruise");
+            Console.WriteLine("showing cruiseInfo");
         }
 
     }

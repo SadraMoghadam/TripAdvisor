@@ -7,7 +7,7 @@ namespace TripAdvisor
     {
         private List<CruiseInfo> cruises;
 
-        public CruiseSearch(List<CruiseInfo> cruises)
+        public Cruise(List<CruiseInfo> cruises)
         {
             this.cruises = cruises;
         }
