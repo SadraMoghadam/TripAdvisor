@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using TripAdvisor;
 
 public class User
@@ -13,6 +14,10 @@ public class User
 		get
 		{
 			return instance;
+		}
+		set
+		{
+			instance = value;
 		}
 	}
 
@@ -36,23 +41,26 @@ public class User
 
 	public void updateUser(UserInfo userInfo)
 	{
+		Console.WriteLine("profile edited successfullty");
 		this.userInfo = userInfo;
 	}
 
 	public bool logIn(string username, string password)
 	{
 		this.loggedIn = true;
+		instance = new User(1, userInfo);
 		Console.WriteLine("logged in successfullty");
+		Console.WriteLine("welcome " + username);
 		return this.loggedIn;
 	}
 
-	public bool register(UserInfo userInfo)
+	public bool register()
 	{
 		Console.WriteLine("registered successfullty");
 		return true;
 	}
 
-	public void showReviews(List<Review> reviews)
+	public void showReviews(int userId)
 	{
 		Console.WriteLine("showing user reviews");
 	}
